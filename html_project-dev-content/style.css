@@ -1,0 +1,134 @@
+body, ul {
+    margin: 0;
+    padding: 0;
+}
+
+li {
+    list-style: none;
+}
+
+header {
+   border-bottom: 2px solid green; 
+   padding: 15px 0;
+}
+
+#header-wrap {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.container {
+    max-width: 1000px;
+    margin: auto;
+}
+
+header ul {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+header ul li a {
+    display: flex;
+    padding: 10px 15px;
+    background: #3a549f;
+    color: white;
+    margin: 15px;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 24px;
+    display: block;
+}
+
+header ul li a:hover {
+    background: #172a64;
+}
+
+#logo img {
+    max-width: 100px;
+}
+
+/*
+    Content styles
+*/
+
+#content-wrap {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#content {
+    width: 70%;
+    padding: 15px 15px 15px 0;
+}
+
+#sidebar {
+    width: 30%;
+    padding: 15px 0 15px 15px;
+}
+
+#content, #sidebar {
+    box-sizing: border-box;
+}
+
+.border {
+    box-shadow: 0 0 3px 2px #00000087;
+    padding: 15px;
+    min-height: 600px;
+}
+
+#gallery {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#gallery .article {
+    width: 50%;
+}
+
+#gallery img {
+    max-width: 100%;
+}
+
+#gallery .article-wrap {
+    margin: 15px;
+    box-shadow: 0 0 6px 3px #00000075;
+    padding: 10px;
+    text-align: center;
+}
+
+#gallery .article-wrap h4 {
+    margin: 0 0 15px 0;
+    text-transform: uppercase;
+    font-size: 22px;
+}
+
+.list{box-shadow: 0 0 3px 2px black;
+    padding: 10px;
+    margin-bottom: 15px;
+}
+.list a{
+    text-decoration: none;
+    color: black
+}
+.list h3{
+    margin: 0 0 5px 0;
+}
+
+@media (max-with:1060px){
+    #content-wrap{
+        margin: 0 15px;
+    }
+}
+
+@media(max-width: 800px) {
+    header ul {
+        width: 100%;
+    }
+
+    header ul li, #logo{
+        width: 100%;
+        text-align: center;
+    }
+}

@@ -1,0 +1,58 @@
+body, ul {
+    margin: 0;
+    padding: 0;
+}
+
+li {
+    list-style: none;
+}
+
+header {
+   border-bottom: 2px solid green; 
+   padding: 15px 0;
+}
+
+#header-wrap {
+    max-width: 1000px;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+header ul {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+header ul li a {
+    display: flex;
+    padding: 10px 15px;
+    background: #3a549f;
+    color: white;
+    margin: 15px;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 24px;
+    display: block;
+}
+
+header ul li a:hover {
+    background: #172a64;
+}
+
+#logo img {
+    max-width: 100px;
+}
+
+@media(max-width: 800px) {
+    header ul {
+        width: 100%;
+    }
+
+    header ul li, #logo{
+        width: 100%;
+        text-align: center;
+    }
+}
